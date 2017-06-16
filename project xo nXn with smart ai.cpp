@@ -177,7 +177,7 @@ public :
     void checkwin() {
 
         if( this->check == 0) {
-            //��ᤧ����
+            //µÐá¤§«éÒÂ
             for( i = 1 ; i < this->row ; i++ ) {
                     if( (this->table[0][0] == 'O' || this->table[0][0] == 'X' ) && this->table[0][0] == this->table[i][i] )
                         this->check=1 ;
@@ -189,7 +189,7 @@ public :
         }
 
         if( this->check == 0) {
-            //��ᤧ���
+            //µÐá¤§¢ÇÒ
             for( int last=this->row-1, i = 0 ; i < this->row ; i++, last-- ) {
                 if( (this->table[0][this->row-1] == 'O' || this->table[0][this->row-1]== 'X' ) && this->table[0][this->row-1] == this->table[i][last] )
                     this->check = 1 ;
@@ -201,7 +201,7 @@ public :
             }
         }
         if( this->check == 0) {
-          //�ǹ͹
+          //á¹Ç¹Í¹
             for( i = 0 ; i < this->row ; i++ ) {
                 for ( j = 1 ; j < this->row ; j++ ) {
                     if( ( this->table[i][0] == 'O' || this->table[i][0] == 'X' ) && this->table[i][0] == this->table[i][j] )
@@ -218,7 +218,7 @@ public :
         }
 
         if( this->check == 0) {
-             //�ǵ��
+             //á¹ÇµÑé§
              for( i = 0 ; i < this->row ; i++ ) {
                 for ( j = 1 ; j < this->row ; j++ ) {
                     if( ( this->table[0][i] == 'O' || this->table[0][i] == 'X' ) && this->table[0][i] == this->table[j][i] )
@@ -489,7 +489,7 @@ public :
     //===============================================================================
      int inputComOX() {
         int ans, num = 0;
-        //��ᤧ����
+        //µÐá¤§«éÒÂ
         for( i = 0 ; i < this->row ; i++ ) {
             if( (this->table[0][0] == 'O' || this->table[0][0] == 'X' ) && this->table[0][0] == this->table[i][i] ) {
                 num++;
@@ -535,7 +535,7 @@ public :
         if(num == this->row-1) {
             return ans;
         }
-        //�ǵ��
+        //á¹ÇµÑé§
          for( i = 0 ; i < this->row ; i++ ) {
             for ( j = 0 ; j < this->row ; j++ ) {
                 if( ( this->table[0][i] == 'O' || this->table[0][i] == 'X' ) && this->table[0][i] == this->table[j][i] ) {
@@ -557,9 +557,9 @@ public :
         }
 
         srand (time(NULL));
-        cout << "RAN : ";
+//         cout << "RAN : ";
         ans = rand() % ((this->row * this->row)) + 1;
-        cout << ans << endl;
+//         cout << ans << endl;
         return ans;
     }
 };
