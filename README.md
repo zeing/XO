@@ -2,7 +2,7 @@
 My C language's project
 
 MODE : 
-COM VS PLAYER  ( Setting one play's name as "COM"
+COM VS PLAYER  ( Setting one play's name as "COM" )
 PLAYER VS PLAYER 
 
 RANK & POINT : 
