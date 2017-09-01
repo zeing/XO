@@ -7,3 +7,6 @@ PLAYER VS PLAYER
 
 RANK & POINT : 
 record point of players in file 
+
+DEV & TEST on
+WINDOW OS 
