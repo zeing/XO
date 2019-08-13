@@ -1,5 +1,6 @@
 # XO
 My C language's project
+Infinity N
 
 MODE : 
 COM VS PLAYER  ( Setting one play's name as "COM" )
